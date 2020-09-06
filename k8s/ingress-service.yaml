@@ -16,7 +16,7 @@ spec:
     - hosts:
         - griecoengineering.net
         - www.griecoengineering.net
-        secretName: griecoengineering-net
+      secretName: griecoengineering-net
   rules:
     - host: griecoengineering.net
       http:
