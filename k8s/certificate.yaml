@@ -14,6 +14,6 @@ spec:
     acme:
         - http01:
             ingressClass: nginx
-        domains:
+          domains:
             - griecoengineering.net
             - www.griecoengineering.net 
