@@ -1,6 +1,6 @@
-docker build -t ngrieco/multi-client:latest -t ngrieco/multi-client:$SHA -f ./client/Dockerfile ./client
-docker build -t ngrieco/multi-server:latest -t ngrieco/multi-server:$SHA -f ./server/Dockerfile ./server
-docker build -t ngrieco/multi-worker:latest -t ngrieco/multi-worker:$SHA -f ./worker/Dockerfile ./worker
+docker build -t ngrieco/multi-client:latest -t ngrieco/multi-client:$SHA -f ./client/Dockerfile ./client/
+docker build -t ngrieco/multi-server:latest -t ngrieco/multi-server:$SHA -f ./server/Dockerfile ./server/
+docker build -t ngrieco/multi-worker:latest -t ngrieco/multi-worker:$SHA -f ./worker/Dockerfile ./worker/
 docker push ngrieco/multi-client:latest
 docker push ngrieco/multi-server:latest
 docker push ngrieco/multi-worker:latest
