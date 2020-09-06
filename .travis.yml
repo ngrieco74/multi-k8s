@@ -20,7 +20,7 @@ before_install:
     
 script:
     #- docker run ngrieco/react-test npm run test -- --coverage
-    - docker run -e CI=true ngrieco/docker-react npm test
+    - docker run -e CI=true ngrieco/react-test npm test
     
 deploy:
     provider: script
