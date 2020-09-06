@@ -9,6 +9,7 @@ metadata:
     # ADD THIS LINE ABOVE
     nginx.ingress.kubernetes.io/rewrite-target: /$1
     # UPDATE THIS LINE ABOVE
+    cert-manager.io/cluster-issuer: 'letsencrypt-prod'
 spec:
   rules:
     - http:
