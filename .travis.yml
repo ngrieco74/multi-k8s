@@ -16,9 +16,11 @@ before_install:
     - gcloud container clusters get-credentials multi-cluster
     - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME"  --password-stdin
     - docker build -t ngrieco/react-test -f ./client/Dockerfile.dev ./client
+
     
 script:
-    - docker run ngrieco/react-test npm run test -- --coverage
+    #- docker run ngrieco/react-test npm run test -- --coverage
+    - docker run -e CI=true ngrieco/react-test npm test
     
 deploy:
     provider: script
